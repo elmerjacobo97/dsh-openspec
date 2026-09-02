@@ -1,0 +1,65 @@
+{
+  "name": "dsh-openspec",
+  "version": "0.1.0",
+  "description": "Native OpenSpec slash commands for DeepSeek Harness",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Elmer Jacobo",
+    "url": "https://elmerjacobo.dev"
+  },
+  "homepage": "https://elmerjacobo.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elmerjacobo97/dsh-openspec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elmerjacobo97/dsh-openspec/issues"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-commands": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-llm": "^0.1.1-rc.2"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-commands": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-llm": "0.1.1-rc.2",
+    "@types/node": "^22.20.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.6"
+  },
+  "dependencies": {
+    "@fission-ai/openspec": "1.11.0"
+  }
+}

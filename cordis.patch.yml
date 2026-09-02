@@ -1,0 +1,6 @@
+# dsh-openspec profile bundle
+# The package contributes its host-side Cordis plugin to any profile that installs it.
+
+- insert:
+    - id: openspec
+      name: dsh-openspec
