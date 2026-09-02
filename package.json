@@ -11,7 +11,7 @@
   "homepage": "https://elmerjacobo.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elmerjacobo97/dsh-openspec.git"
+    "url": "git+https://github.com/elmerjacobo97/dsh-openspec.git"
   },
   "bugs": {
     "url": "https://github.com/elmerjacobo97/dsh-openspec/issues"
