@@ -2,7 +2,7 @@
 
 **Native OpenSpec commands for DeepSeek Harness.**
 
-`dsh-openspec` connects the official [OpenSpec](https://github.com/Fission-AI/OpenSpec) workflows to the DeepSeek Harness command registry. It adds `/opsx-*` commands directly to DSH without copying or rewriting OpenSpec workflows.
+`@codigoconelmer/dsh-openspec` connects the official [OpenSpec](https://github.com/Fission-AI/OpenSpec) workflows to the DeepSeek Harness command registry. It adds `/opsx-*` commands directly to DSH without copying or rewriting OpenSpec workflows.
 
 > Created by **Elmer Jacobo** · [elmerjacobo.dev](https://elmerjacobo.dev)
 
@@ -49,7 +49,7 @@ The plugin does not maintain local copies of the workflows and does not require 
 ### From npm
 
 ```bash
-dsh plugin --profile web add dsh-openspec
+dsh plugin --profile web add @codigoconelmer/dsh-openspec
 ```
 
 ### From this checkout

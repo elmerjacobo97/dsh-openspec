@@ -1,5 +1,5 @@
 {
-  "name": "dsh-openspec",
+  "name": "@codigoconelmer/dsh-openspec",
   "version": "0.1.0",
   "description": "Native OpenSpec slash commands for DeepSeek Harness",
   "type": "module",

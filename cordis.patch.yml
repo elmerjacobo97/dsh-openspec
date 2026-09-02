@@ -3,4 +3,4 @@
 
 - insert:
     - id: openspec
-      name: dsh-openspec
+      name: '@codigoconelmer/dsh-openspec'
